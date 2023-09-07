@@ -1,0 +1,31 @@
+create database practice;
+use practice;
+
+
+Create Table Employ
+(
+    Empno varchar(10),
+    Name varchar(50),
+    gender enum('MALE','FEMALE'),
+    Dept varchar(30),
+    Desig varchar(30),
+    Basic INT,
+    primary key(Empno)
+);
+drop table employ;
+Insert into Employ(empno,Name,gender,Dept,Desig,Basic) values
+('EHYD001','kiran kumar','MALE','java','developer',42233),
+('EHYD002','Vishnu Vardhan','MALE','dotnet','programmer',42133),
+
+('EHYD003','Ram Kishan','MALE','java','developer',82233),
+('EHYD004','Vandhana','FEMALE','dotnet','programmer',52234),
+('EHYD005','Sheik Sulthan','FEMALE','dotnet','developer',42555);
+
+
+Create Table Login
+(
+    userName varchar(20),
+    password varchar(20)
+);
+
+INSERT INTO LOGIN(userName,password) values ('Praveen','Ippili!0909'),('Naveen','Naveen!0601');
